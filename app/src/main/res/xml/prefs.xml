@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:summary="Username and password information"
+        android:title="Feedback Form" >
+        <EditTextPreference
+            android:key="name"
+            android:summary="Please enter your Name"
+            android:title="Name" />
+        <EditTextPreference
+            android:key="prod"
+            android:summary="Share your views on the product!"
+            android:title="Product review" />
+
+        <CheckBoxPreference
+            android:key="checkBox"
+            android:summary="On/Off"
+            android:title="Further updates" />
+
+        <ListPreference
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValues"
+            android:key="listpref"
+            android:summary="* As you wish *"
+            android:title="Rate us!" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
